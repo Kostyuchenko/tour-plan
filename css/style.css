@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -455,6 +456,7 @@ template {
   width: 65px;
   height: 100%;
   border: none;
+  cursor: pointer;
   background-color: #EC1F46;
 }
 
@@ -481,6 +483,17 @@ template {
   line-height: 18px;
   color: #333333;
   margin-left: 18px;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+  list-style: none;
 }
 
 @media (max-width: 1200px) {
