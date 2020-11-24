@@ -460,6 +460,14 @@ template {
   background-color: #EC1F46;
 }
 
+.search__button:focus {
+  outline: none;
+}
+
+.search__button:active {
+  outline: none;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
