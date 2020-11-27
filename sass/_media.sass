@@ -1,5 +1,5 @@
 @media ( max-width: 1200px )
-  .container
+  .container, .nwewletter-wrapper
     max-width: 960px
   .slider
     width: 590px
@@ -105,6 +105,12 @@
     width: 100%
   .map
     width: 100%
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
+      max-width: 576px
+      width: 92%
 @media ( max-width: 576px )
   .container
     max-width: 90%
@@ -119,3 +125,16 @@
   .hotel
     &__slider
       margin-bottom: 20px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 37px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .subscribe
+    width: 100%
