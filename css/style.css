@@ -836,6 +836,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 400px;
 }
 
 .newsletter:before {
@@ -1108,7 +1109,7 @@ template {
     line-height: 24px;
   }
   .slider {
-    height: 250px;
+    height: 180px;
   }
   .hotel__slider {
     margin-bottom: 20px;
