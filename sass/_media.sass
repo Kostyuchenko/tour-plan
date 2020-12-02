@@ -9,6 +9,13 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .card
+    width: 255px
+    height: 255px
+    margin-right: 20px
+    &:nth-child(4n)
+      margin-right: 0
+
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -50,11 +57,19 @@
     &-slider
       &__item
         max-width: 580px
+  .card
+    width: 339px
+    height: 255px
+    margin-right: 0
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
 @media ( max-width: 767px )
   .container
     max-width: 576px
     width: 92%
-
   .navbar
     &-menu,
     &__search,
@@ -63,7 +78,6 @@
     &-top
       &__menu-button
         display: flex
-
   .menu
     &-button
       display: flex
@@ -141,10 +155,32 @@
       line-height: 38px
       text-align: center
       text-transform: uppercase
+  .card
+    width: 48%
+    height: 255px
+  .activities
+    padding: 40px 0 60px 0
 @media ( max-width: 576px )
   .container
     max-width: 90%
   .reviews
+    padding: 40px 0 50px 0
+    &-slider
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: left
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+      max-width: 245px
+      margin: 0 auto 40px
     &__username
       margin-bottom: 0
   .logo
@@ -172,4 +208,6 @@
         font-size: 30px
         line-height: 38px
   .subscribe
+    width: 100%
+  .card
     width: 100%
