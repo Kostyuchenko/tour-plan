@@ -12,7 +12,9 @@
   .card
     width: 230px
     height: 230px
-
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -63,6 +65,41 @@
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
+  .footer
+    padding: 73px 0 0 0
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &-bottom
+      padding: 56px 0 33px 0
+      grid-template-columns: 1fr 1fr
+      &__ul
+        max-width: 283px
+        grid-column: 1
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -157,6 +194,9 @@
     height: 255px
   .activities
     padding: 40px 0 60px 0
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 576px )
   .container
     max-width: 90%
@@ -216,3 +256,48 @@
       font-size: 18px
       line-height: 23px
       text-transform: uppercase
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__social-links
+      align-self: center
+    &__button
+      order: 2
+    &__info
+      margin-bottom: 15px
+      flex-basis: 100%
+    &__message
+      margin-bottom: 15px
+    &-bottom
+      padding: 30px 0 21px 0
+      grid-template-columns: 1fr, 1fr
+      &__ul
+        grid-column: span 2
+        max-width: 306px
+        margin-bottom: 10px
+      &__image
+        justify-content: flex-start
+        grid-row: 3
