@@ -1379,6 +1379,7 @@ template {
   }
   .footer-bottom__ul {
     max-width: 283px;
+    justify-self: start;
     grid-column: 1;
   }
 }
