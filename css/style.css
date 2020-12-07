@@ -1555,14 +1555,17 @@ template {
   .reviews {
     padding: 40px 0 30px 0;
   }
-  .reviews-slider__text {
+  .navbar__search {
+    max-width: 245px;
+  }
+  .navbar-slider__text {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 160%;
     text-align: left;
   }
-  .reviews__title {
+  .navbar__title {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1572,7 +1575,7 @@ template {
     max-width: 245px;
     margin: 0 auto 40px;
   }
-  .reviews__username {
+  .navbar__username {
     margin-bottom: 0;
   }
   .logo {
