@@ -101,6 +101,9 @@
         max-width: 283px
         justify-self: start
         grid-column: 1
+  .modal
+    &__dialog
+      padding: 33px 50px
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -235,6 +238,15 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__button
+      width: 100%
+      order: 2
+    &__info
+      order: 1
+      margin-bottom: 15px
+    &__dialog
+      min-width: 478px
 @media ( max-width: 576px )
   .container
     max-width: 90%
@@ -348,3 +360,6 @@
       &__image
         justify-content: flex-start
         grid-row: 3
+  .modal
+    &__dialog
+      min-width: 90%
