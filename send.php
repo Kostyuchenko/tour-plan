@@ -37,7 +37,7 @@ try {
     $mail->setFrom('kostyuchenko.dm@gmail.com', 'Dmitriy Kostyuchenko'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('dkostyuchenk@mail.ru');
+    $mail->addAddress('dkostyuchenk2909@gmail.com');
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;

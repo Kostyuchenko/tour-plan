@@ -1301,6 +1301,7 @@ template {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
