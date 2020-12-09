@@ -1795,6 +1795,7 @@ template {
   }
   .modal__dialog {
     min-width: 90%;
+    padding: 33px 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
