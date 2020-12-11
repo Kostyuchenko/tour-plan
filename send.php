@@ -29,12 +29,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'kostyuchenko.dm@gmail.com'; // Логин на почте
-    $mail->Password   = '30qez9203040'; // Пароль на почте
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'dkostyuchenk@mail.ru'; // Логин на почте
+    $mail->Password   = '11235813213455design'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('kostyuchenko.dm@gmail.com', 'Dmitriy Kostyuchenko'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('dkostyuchenk@mail.ru', 'Дима Костюченк'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('dkostyuchenk2909@gmail.com');
@@ -43,7 +43,7 @@ try {
     $mail->Subject = $title;
     $mail->Body = $body;    
 
-// Проверяем отравленность сообщения
+// Статус отправки сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
 
@@ -54,3 +54,4 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+?>

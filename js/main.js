@@ -24,7 +24,6 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
-    console.log('Клик по кнопке меню');
     document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--visible')
 });
 
@@ -48,4 +47,30 @@ var reviewsSlider = new Swiper('.reviews-slider', {
       modaDialog.removeClass("modal__dialog--visible");
     }
 
+  // Обработка форм
+  $(".form").each(function(){
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Укажите имя",
+        minlength: "Имя не должно быть короче 2 букв",
+      },
+      email: {
+        required: "Нам нужна ваша почта для связи",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Телефон обязателен",
+      },
+    },
+  });
+  });
 });
+
+// Маска для номера телефона
+$(document).ready(function() {
+  $("#modal__phone").mask("+7 (999) 999-9999");
+  $("#footer__phone").mask("+7 (999) 999-9999");
+});
+

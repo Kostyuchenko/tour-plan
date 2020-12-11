@@ -23,7 +23,6 @@ img {
   border: none;
   padding: 0 23px;
   height: 50px;
-  margin-bottom: 15px;
 }
 
 .message {
@@ -54,6 +53,11 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   outline: none;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1196,6 +1200,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   flex-basis: 48%;
   font-style: normal;
   font-weight: normal;
@@ -1214,6 +1222,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  margin-top: 15px;
   margin-bottom: 23px;
   resize: none;
 }
@@ -1302,6 +1311,7 @@ template {
   opacity: 0;
   transition: opacity 0.2s;
   overflow: auto;
+  max-height: 100%;
 }
 
 .modal__dialog--visible {
@@ -1328,7 +1338,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__input:focus {
@@ -1338,12 +1348,16 @@ template {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   resize: none;
 }
 
 .modal__message:focus {
   outline: none;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1352,6 +1366,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  margin-top: 15px;
 }
 
 @media (max-width: 1200px) {
