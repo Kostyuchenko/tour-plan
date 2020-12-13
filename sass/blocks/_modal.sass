@@ -29,6 +29,10 @@
     transition: opacity 0.2s
     overflow: auto
     max-height: 100%
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
     &--visible
       visibility: visible
       opacity: 1
@@ -60,6 +64,9 @@
       outline: none
   &__button
     margin-top: 15px
+    @media ( hover: hover )
+      &:hover
+        background-color: #bd1837
   &__info
     color: #E0E0E0
     font-style: normal
@@ -67,3 +74,4 @@
     font-size: 12px
     line-height: 15px
     margin-top: 15px
+    align-self: center

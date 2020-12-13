@@ -9,6 +9,7 @@
     &__offer
       margin-left: 14px
       margin-top: 4px
+      border-radius: 3px
     &__name
       font-size: 24px
       line-height: 30px
@@ -21,6 +22,7 @@
   &-description
     font-size: 12px
     line-height: 15px
+    margin: 0
   &-grid
     display: flex
     justify-content: space-between
@@ -70,6 +72,10 @@
       &--prev
         left: 18px
         background-image: url(../img/shevron-left.svg)
+  &__button
+    cursor: pointer
+    &:focus
+      outline: none
 .stars
   display: flex
   align-items: center
@@ -79,7 +85,7 @@
 .offer
   font-size: 10px
   line-height: 13px
-  padding: 4px 9px
+  padding: 4px 13px
   background-color: $primary
   color: $light
 .rating
@@ -95,13 +101,15 @@
   &__counter
     font-size: 14px
     line-height: 18px
+  &__five
+    font-size: 10px
 .booking
   color: $light
   background-color: $dark
   border-radius: 8px
   width: 350px
-  min-height: 210px
-  padding: 28px
+  max-height: 210px
+  padding: 26px
   &__info
     display: flex
     justify-content: space-between
@@ -139,10 +147,12 @@
     align-items: center
     justify-content: space-between
     margin-bottom: 17px
+
   &__heading
     font-weight: 600
     font-size: 18px
     line-height: 25px
+
   &__number
     display: flex
     align-items: center
@@ -152,8 +162,10 @@
     line-height: 25px
     text-decoration: none
     color: inherit
+
   &__num
     margin-left: 8px
+
   &__button
     width: 100%
     min-height: 45px
@@ -165,9 +177,16 @@
     border-radius: 4px
     border: none
     cursor: pointer
+
     &:focus
       outline: none
+
+    @media ( hover: hover )
+      &:hover
+        background-color: #bd1837
+
 .map
   width: 347px
   height: 213px
   border-radius: 4px
+  overflow: hidden
